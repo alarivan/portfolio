@@ -91,7 +91,7 @@ const Contact: React.FC<Props> = () => {
       </Snackbar>
 
       <div style={{ display: "none" }}>
-        <ContactForm onSubmit={handleFormSubmit} />
+        <ContactForm onSubmit={() => {}} />
       </div>
 
       <DefaultButton label="contact" onClick={handleOpen} />

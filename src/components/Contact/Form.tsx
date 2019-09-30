@@ -28,7 +28,13 @@ const ContactForm: React.FC<Props> = ({ onSubmit }) => {
       validationSchema={validationSchema}
       onSubmit={onSubmit}
       render={(formikBag: FormikProps<ContactFormValues>) => (
-        <SForm data-netlify="true" data-netlify-honeypot="bot-field">
+        <SForm
+          name="contact"
+          method="post"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+        >
+          <input type="hidden" name="form-name" value="contact" />
           <InputGroup label="Email" field={{ name: "email", type: "email" }} />
           <InputGroup label="Name" field={{ name: "name", type: "text" }} />
           <InputGroup
