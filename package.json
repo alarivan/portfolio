@@ -5,6 +5,14 @@
   "version": "0.1.0",
   "author": "alarivan <alarivan@pm.me>",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.25",
+    "@fortawesome/free-brands-svg-icons": "^5.11.2",
+    "@fortawesome/free-solid-svg-icons": "^5.11.2",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "@material-ui/core": "^4.4.3",
+    "@types/styled-react-modal": "^1.2.0",
+    "@types/yup": "^0.26.24",
+    "formik": "^1.5.8",
     "gatsby": "^2.15.7",
     "gatsby-image": "^2.2.17",
     "gatsby-plugin-manifest": "^2.2.13",
@@ -14,11 +22,17 @@
     "gatsby-plugin-styled-components": "^3.1.5",
     "gatsby-plugin-typescript": "^2.1.6",
     "gatsby-source-filesystem": "^2.1.21",
+    "gatsby-transformer-remark": "^2.6.26",
     "gatsby-transformer-sharp": "^2.2.13",
+    "modern-normalize": "^0.5.0",
+    "query-string": "^6.8.3",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-helmet": "^5.2.1",
-    "styled-components": "^4.3.2"
+    "react-image-lightbox": "^5.1.0",
+    "styled-components": "^4.3.2",
+    "styled-react-modal": "^2.0.0",
+    "yup": "^0.27.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^4.1.0",

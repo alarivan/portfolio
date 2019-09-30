@@ -1,8 +1,10 @@
 import React, { ReactNode } from "react"
 import styled from "styled-components"
-import { useStaticQuery, graphql } from "gatsby"
 import GlobalStyles from "./styled/global"
-import Header from "./header"
+import Sidebar from "./sidebar"
+import Helmet from "react-helmet"
+import "modern-normalize"
+import "react-image-lightbox/style.css"
 
 type Props = {
   children: ReactNode
@@ -10,32 +12,29 @@ type Props = {
 
 const StyledContainer = styled.div`
   margin: 0 auto;
-  max-width: 960px;
-  padding: 0 1.0875rem 1.45rem;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+  }
 `
 
 const Layout: React.FC<Props> = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   return (
     <>
+      <Helmet>
+        <link
+          href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"
+          rel="stylesheet"
+        ></link>
+      </Helmet>
       <GlobalStyles />
-      <Header siteTitle={data.site.siteMetadata.title} />
       <StyledContainer>
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+        <Sidebar />
+        {children}
       </StyledContainer>
     </>
   )
