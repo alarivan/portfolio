@@ -30,7 +30,7 @@ const Aside = styled.aside`
 
 const FirstName = styled.h1`
   font-size: 2.5rem;
-  margin-bottom: 0;
+  margin: 1rem auto 0;
   text-transform: uppercase;
 `
 const LastName = styled.h3`
@@ -41,7 +41,7 @@ const LastName = styled.h3`
 const Role = styled.h4`
   font-size: 1.2rem;
   font-style: italic;
-  margin-top: 0;
+  margin: 0 auto 1rem;
 `
 
 interface Props {}
