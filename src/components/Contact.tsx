@@ -57,9 +57,6 @@ const Contact: React.FC<Props> = () => {
         setSnackbar(true)
       })
       .catch(error => alert(error))
-    setSubmitting(false)
-    setOpen(false)
-    setSnackbar(true)
   }
 
   const handleSnackbarClose = () => setSnackbar(false)
