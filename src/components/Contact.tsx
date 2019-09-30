@@ -93,6 +93,10 @@ const Contact: React.FC<Props> = () => {
         />
       </Snackbar>
 
+      <div style={{ display: "none" }}>
+        <ContactForm onSubmit={handleFormSubmit} />
+      </div>
+
       <DefaultButton label="contact" onClick={handleOpen} />
     </>
   )
