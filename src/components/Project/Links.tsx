@@ -28,13 +28,13 @@ const Links: React.FC<Props> = ({ website, source }) => {
   return (
     <SLinks>
       <li>
-        <Link href={website} target="_blank">
+        <Link href={website} target="_blank" rel="noopener">
           website
         </Link>
       </li>
       {source && (
         <li>
-          <Link href={source} target="_blank">
+          <Link href={source} target="_blank" rel="noopener">
             source
           </Link>
         </li>

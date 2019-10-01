@@ -20,7 +20,7 @@ interface Props {
 const LinksItem: React.FC<Props> = ({ url, title, children }) => {
   return (
     <SLinksItem>
-      <a href={url} title={title} target="_blank">
+      <a href={url} title={title} target="_blank" rel="noopener">
         {children}
       </a>
     </SLinksItem>
