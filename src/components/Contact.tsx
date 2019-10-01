@@ -10,6 +10,7 @@ import ContactForm from "./Contact/Form"
 import { stringify } from "query-string"
 import SnackbarContent from "@material-ui/core/SnackbarContent"
 import DefaultButton from "./Button"
+import ModalHeader from "./Contact/ModalHeader"
 
 const useStyles = makeStyles(() =>
   createStyles({
@@ -23,7 +24,7 @@ const useStyles = makeStyles(() =>
 
 const SModalContent = styled.div`
   min-width: 380px;
-  padding: 2rem 1rem;
+  padding: 0.5rem 1rem 1.5rem;
   background: #f9f9f9;
 `
 
@@ -72,9 +73,12 @@ const Contact: React.FC<Props> = () => {
         className={classes.modal}
       >
         <Slide direction="down" in={open} mountOnEnter unmountOnExit>
-          <SModalContent>
-            <ContactForm onSubmit={handleFormSubmit} />
-          </SModalContent>
+          <div>
+            <ModalHeader title="Contact" onButtonClick={handleClose} />
+            <SModalContent>
+              <ContactForm onSubmit={handleFormSubmit} />
+            </SModalContent>
+          </div>
         </Slide>
       </Modal>
 
