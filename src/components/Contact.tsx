@@ -23,7 +23,7 @@ const useStyles = makeStyles(() =>
 )
 
 const SModalContent = styled.div`
-  min-width: 380px;
+  min-width: 300px;
   padding: 0.5rem 1rem 1.5rem;
   background: #f9f9f9;
 `
