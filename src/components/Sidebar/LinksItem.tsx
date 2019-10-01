@@ -14,12 +14,13 @@ const SLinksItem = styled.li`
 
 interface Props {
   url: string
+  title: string
 }
 
-const LinksItem: React.FC<Props> = ({ url, children }) => {
+const LinksItem: React.FC<Props> = ({ url, title, children }) => {
   return (
     <SLinksItem>
-      <a href={url} target="_blank">
+      <a href={url} title={title} target="_blank">
         {children}
       </a>
     </SLinksItem>

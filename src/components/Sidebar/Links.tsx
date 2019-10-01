@@ -16,10 +16,13 @@ interface Props {}
 const Links: React.FC<Props> = () => {
   return (
     <SLinks>
-      <LinksItem url="https://github.com/alarivan/">
+      <LinksItem url="https://github.com/alarivan/" title="GitHub">
         <FontAwesomeIcon icon={faGithub} size="3x" />
       </LinksItem>
-      <LinksItem url="https://www.linkedin.com/in/stas-kokshin-5a7b53112/">
+      <LinksItem
+        url="https://www.linkedin.com/in/stas-kokshin-5a7b53112/"
+        title="LinkedIn"
+      >
         <FontAwesomeIcon icon={faLinkedin} size="3x" color="#0077b5" />
       </LinksItem>
     </SLinks>
