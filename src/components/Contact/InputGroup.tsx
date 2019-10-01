@@ -1,5 +1,5 @@
 import React from "react"
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 import { Field, ErrorMessage } from "formik"
 
 const SInputGroup = styled.div`
@@ -11,21 +11,25 @@ const Label = styled.label`
   margin-bottom: 0.1rem;
   display: block;
 `
-
+const textareaStyles = css`
+  display: block;
+  min-height: 100px;
+`
 const SField = styled(Field)`
   padding: 0.5rem;
   width: 100%;
   min-width: 320px;
-  box-shadow: inset 0 1px 3px #ddd;
-  border: 1px solid #ccc;
+  border: 1px solid #accbee;
 
-  ${({ component }) => (component === "textarea" ? "min-height: 100px;" : "")}
+  ${({ component }) => (component === "textarea" ? textareaStyles : "")}
 `
 
 const SErrorMessage = styled(ErrorMessage)`
   font-size: 0.8rem;
-  margin-top: 0.25rem;
-  color: #ff4136;
+  margin-top: 0.15rem;
+  background: #d53930;
+  padding: 0.15rem 0.25rem;
+  color: #f9f9f9;
 `
 
 interface Props {
