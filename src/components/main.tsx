@@ -43,7 +43,7 @@ const Main: React.FC = () => {
                   id
                   publicURL
                   childImageSharp {
-                    fluid(maxWidth: 200) {
+                    fluid(maxWidth: 300) {
                       ...GatsbyImageSharpFluid
                     }
                   }
