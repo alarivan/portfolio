@@ -2,7 +2,7 @@
 title: GymPal
 website: https://gympal.net/
 source:
-order: 3
+order: 4
 images:
   - src: ../images/projects/gympal/Image-from-iOS-(12)_sized_3.jpg
   - src: ../images/projects/gympal/Image-from-iOS-(12)_sized2.jpg

@@ -2,6 +2,13 @@
 title: Sport Consulting
 website: https://sportconsulting.ca/
 source: https://github.com/alarivan/sport_consulting/
+scores:
+  - source: PageSpeed Insights
+    scores:
+      - score: 94
+        platform: Mobile
+      - score: 100
+        platform: Desktop
 order: 2
 images:
   - src: ../images/projects/sportconsulting/devices.png
