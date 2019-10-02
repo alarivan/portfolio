@@ -2,6 +2,7 @@ import React from "react"
 import Gallery from "./Project/Gallery"
 import Links from "./Project/Links"
 import styled from "styled-components"
+import ScoreList, { ScoreListProps } from "./Project/ScoreList"
 
 const SProject = styled.div`
   padding: 1rem;
@@ -21,6 +22,7 @@ interface Props {
       title: string
       website: string
       source?: string
+      scores: ScoreListProps[]
       images: [
         {
           src: {
@@ -45,6 +47,12 @@ const Project: React.FC<Props> = ({ project }) => {
       />
       <Gallery images={project.frontmatter.images} />
       <div dangerouslySetInnerHTML={{ __html: project.html }}></div>
+      <div>
+        {project.frontmatter.scores &&
+          project.frontmatter.scores.map((item, index) => (
+            <ScoreList key={index} {...item} />
+          ))}
+      </div>
     </SProject>
   )
 }

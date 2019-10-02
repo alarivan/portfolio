@@ -31,6 +31,13 @@ const Main: React.FC = () => {
               title
               website
               source
+              scores {
+                source
+                scores {
+                  platform
+                  score
+                }
+              }
               images {
                 src {
                   id
