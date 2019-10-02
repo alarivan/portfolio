@@ -2,7 +2,7 @@
 title: Blocknote
 website: https://blocknote.xyz/
 source:
-order: 5
+order: 6
 images:
   - src: ../images/projects/blocknote/desktop_and_mobile.jpg
   - src: ../images/projects/blocknote/mobile1.jpg
