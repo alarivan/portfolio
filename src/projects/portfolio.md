@@ -9,7 +9,7 @@ scores:
         platform: Mobile
       - score: 100
         platform: Desktop
-order: 4
+order: 5
 images:
   - src: ../images/projects/portfolio/devices.png
   - src: ../images/projects/portfolio/c545f6fb168143f4842b993f906b2f9e_12_1280.jpg

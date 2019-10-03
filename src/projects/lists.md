@@ -2,7 +2,7 @@
 title: LISTS
 website: https://lists.thisismydomain.life/
 source: https://github.com/alarivan/lists/
-order: 7
+order: 8
 images:
   - src: ../images/projects/lists/lists_1.png
   - src: ../images/projects/lists/lists_2.png
