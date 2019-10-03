@@ -20,7 +20,7 @@ const SScore = styled.div`
 
 const Badge = styled.div`
   border: 4px solid #0cce6b;
-  background: #daffec;
+  background: #e7faf0;
   color: #0cce6b;
   font-weight: bold;
   width: 50px;
@@ -35,7 +35,7 @@ const Badge = styled.div`
 const Platform = styled.div`
   margin-top: 0.5rem;
   font-weight: bold;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 `
 
 const Score: React.FC<ScoreProps> = ({ platform, score }) => {
