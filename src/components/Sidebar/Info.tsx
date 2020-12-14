@@ -10,9 +10,6 @@ const SInfo = styled.div`
 
 const Inner = styled.div`
   padding: 0 1rem;
-  /* box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
-      0 10px 10px -5px rgba(0, 0, 0, 0.04); */
-  /* background: #f9f9f9; */
 `
 
 const Items = styled.ul`
@@ -24,17 +21,31 @@ const Items = styled.ul`
 
 const items = [
   {
-    title: "Front-end",
-    description:
-      "HTML5, CSS3, Javascript, ES6, React, Gatsby, Vue, Blockstack, GraphQL",
+    title: "Languages",
+    description: [
+      "JavaScript, TypeScript",
+      "HTML5, CSS3, SCSS",
+      "PHP",
+      "Elixir",
+    ],
   },
   {
-    title: "Back-end",
-    description: "PHP, Magento 2, Elixir, Phoenix Framework, MySQL, PostgreSQL",
-  },
-  {
-    title: "Cloud",
-    description: "AWS, Netlify, Heroku",
+    title: "Frameworks & Tools",
+    description: [
+      "React, Redux",
+      "Node.js, Express, Koa",
+      "Gatsby, Next.js",
+      "Vue, Vuex",
+      "Phoenix Framework",
+      "Laravel, Lumen",
+      "Docker, Kubernetes",
+      "MySQL, PostgreSQL",
+      "Magento 2, Shopify",
+      "AWS, Netlify",
+      "Cypress, Jest, Storybook",
+      "Webpack, NPM, Git",
+      "REST, GraphQL",
+    ],
   },
 ]
 
@@ -42,7 +53,7 @@ const Info: React.FC = () => {
   return (
     <SInfo>
       <Inner>
-        <h3>What I do</h3>
+        <h3>What I'm good at</h3>
         <Items>
           {items.map((item, index) => (
             <InfoItem key={index} {...item} />
